@@ -10,13 +10,42 @@
 <body>
     <!-- Navbar First -->
     <!-- Name in colored box then the About Contact Gallery buttons -->
-
+    <div class="container">
+        <nav class="nav border-bottom align-items-center">
+            <!-- Custom styling uses .myName and .topBarButtons -->
+            <h1 class="col-3 myName">Riley Brown</h1>
+            <a class="nav-link active col-1 offset-6 topBarButtons" href="#">About</a>
+            <a class="nav-link col-1 topBarButtons" href="#">Portfolio</a>
+            <a class="nav-link col-1 topBarButtons" href="#">Contact</a>
+        </nav>
+    </div>
+    <br>
     <!-- Now the contact entry form in a large text box -->
     <!-- Header with break line -->
     <!-- Two single line text  boxes with smaller headers -->
     <!-- One multiline text box with smaller header -->
     <!-- blue submit button at the bottom -->
-
+    <form class="container">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Your Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="YourEmail@Here.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </form>
+    <br>
+<!-- Customstyling for footer is .stickyFooter -->
+    <div class="footer border-top stickyFooter">
+        <div class="container">
+            <p class="text-center text-muted">Footer</p>
+        </div>
+    </div>
     <!-- footer with blue boarder line -->
     <!-- make it sticky so it stays at the bottom of the screen (if I have time for that) -->
     
