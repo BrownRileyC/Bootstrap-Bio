@@ -11,22 +11,24 @@
 <body>
     <!-- Navbar First -->
     <!-- Name in colored box then the About Contact Gallery buttons -->
-    <div class="container">
-        <nav class="nav border-bottom align-items-center">
-            <!-- Custom styling uses .myName and .topBarButtons -->
-            <h1 class="col-lg-4 col-sm-5 col-12 text-center myName">Riley Brown</h1>
-            <div class="col-lg-4 col-sm-5 offset-sm-2 offset-lg-4">
-                <div class="row">
-                    <a class="nav-link active col-4 topBarButtons" href="./index.html">About</a>
-                    <a class="nav-link col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
-                    <a class="nav-link col-4 topBarButtons" href="./contact.html">Contact</a>
+    <div class="container-fluid topBarBackground border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Custom styling uses .myName and .topBarButtons .topBarBackground-->
+                <h1 class="col-lg-4 col-sm-5 col-12 text-center myName">Riley Brown</h1>
+                <div class="col-lg-4 col-sm-5 offset-sm-2 offset-lg-4">
+                    <div class="row">
+                        <a class="nav-link active col-4 topBarButtons" href="./index.html">About</a>
+                        <a class="nav-link col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
+                        <a class="nav-link col-4 topBarButtons" href="./contact.html">Contact</a>
+                    </div>
                 </div>
+                <!-- This would also work, but it feels better to me to have it as this sub-row sort of thing
+                <a class="nav-link active col-lg-2 col-sm-4 col-4 offset-lg-2 topBarButtons" href="./index.html">About</a>
+                <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
+                <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./contact.html">Contact</a> -->
             </div>
-            <!-- This would also work, but it feels better to me to have it as this sub-row sort of thing
-            <a class="nav-link active col-lg-2 col-sm-4 col-4 offset-lg-2 topBarButtons" href="./index.html">About</a>
-            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
-            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./contact.html">Contact</a> -->
-        </nav>
+        </div>
     </div>
     <br>
     <!-- Now the contact entry form in a large text box -->
@@ -34,20 +36,28 @@
     <!-- Two single line text  boxes with smaller headers -->
     <!-- One multiline text box with smaller header -->
     <!-- blue submit button at the bottom -->
-    <form class="container border mb-3">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Your Name</label>
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="YourEmail@Here.com">
+    <form class="container mb-3 ">
+        <div class="row">
+            <!-- Adding the styling here instead of the container level lets me hide the second column here and display on only one side while on large screens and then center while on smaller screens -->
+            <div class="col-lg-8 col-12 border boxBackground">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Your Name</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="YourEmail@Here.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-4">
+
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <br>
 <!-- Customstyling for footer is .stickyFooter -->

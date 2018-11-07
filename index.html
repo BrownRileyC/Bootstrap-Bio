@@ -11,22 +11,24 @@
 <body>
     <!-- Navbar First -->
     <!-- Name in colored box then the About Contact Gallery buttons -->
-    <div class="container">
-        <nav class="nav border-bottom align-items-center">
-            <!-- Custom styling uses .myName and .topBarButtons -->
-            <h1 class="col-lg-4 col-sm-5 col-12 text-center myName">Riley Brown</h1>
-            <div class="col-lg-4 col-sm-5 offset-sm-2 offset-lg-4">
-                <div class="row">
-                    <a class="nav-link active col-4 topBarButtons" href="./index.html">About</a>
-                    <a class="nav-link col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
-                    <a class="nav-link col-4 topBarButtons" href="./contact.html">Contact</a>
+    <div class="container-fluid topBarBackground border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Custom styling uses .myName and .topBarButtons .topBarBackground-->
+                <h1 class="col-lg-4 col-sm-5 col-12 text-center myName">Riley Brown</h1>
+                <div class="col-lg-4 col-sm-5 offset-sm-2 offset-lg-4">
+                    <div class="row">
+                        <a class="nav-link active col-4 topBarButtons" href="./index.html">About</a>
+                        <a class="nav-link col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
+                        <a class="nav-link col-4 topBarButtons" href="./contact.html">Contact</a>
+                    </div>
                 </div>
+                <!-- This would also work, but it feels better to me to have it as this sub-row sort of thing
+                <a class="nav-link active col-lg-2 col-sm-4 col-4 offset-lg-2 topBarButtons" href="./index.html">About</a>
+                <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
+                <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./contact.html">Contact</a> -->
             </div>
-            <!-- This would also work, but it feels better to me to have it as this sub-row sort of thing
-            <a class="nav-link active col-lg-2 col-sm-4 col-4 offset-lg-2 topBarButtons" href="./index.html">About</a>
-            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
-            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./contact.html">Contact</a> -->
-        </nav>
+        </div>
     </div>
     <br>
 
@@ -35,48 +37,57 @@
     <!-- Header with break line underneath -->
     <!-- Picture floated left -->
     <!-- Text flowing along and under the picture -->
-<!-- customstyling uses .myHeader and .myText -->
+<!-- customstyling uses .myHeader and .myText .aboutMeBackground-->
 <!-- Can't figure out the margins on the side and the break line goes all the way across the box -->
     
-<div class="container border">
+    <div class="container mb-3 ">
         <div class="row">
-            <h1 class="col-12 myHeader border-bottom">
-                About Me
-            </h1>
-        </div>
-        <div class="row">
-            <!-- This set up displays the image and text in one row and with image floated left when on all screen sizes sm and up but it hides those elements and displays a centered picture above the same text that was beside the floated picture. -->
-            <div class="col-lg col-12">
-                <img src="./Assets/images/Blank picture.svg" alt="..." class="img-thumbnail float-left m-3 d-none d-sm-block">
-                <img src="./Assets/images/Blank picture.svg" alt="..." class="img-thumbnail d-block d-sm-none mx-auto">
-                <p class="d-none d-sm-block"> My name is Riley Brown. I studied psychology at the University of Vermont with a focus on developmental psychology. It's a fascinating field, in my opinion, and something very deserving of more study. When I was still in school I thought that I might end up working as a psychologist, and as I focused more and more on family dynamics and early development I decided I'd look into how to become a school psychologist or counselor. Unfortunately going into care like that requires quite a bit of schooling. I believe it was 4 more years at grad school to become a counselor or 6 to become a psychologist. I was intimidated by the cost of continuing school and decided perhaps to set my feet and establish myself a little first. That's how I ended up as a preschool and kindergarten prepratory teacher. After my two years working with these children I realized that while I love working with kids that young, it wasn't what I wanted to do the rest of my life. That's what led me here.</p>
+            <!-- Adding the styling here instead of the container level lets me hide the second column here and display on only one side while on large screens and then center while on smaller screens -->
+            <div class="col-lg-8 col-12 border boxBackground">
+                <div class="row">
+                    <h1 class="col-12 myHeader border-bottom">
+                        About Me
+                    </h1>
+                </div>
+                <div class="row">
+                    <!-- This set up displays the image and text in one row and with image floated left when on all screen sizes sm and up but it hides those elements and displays a centered picture above the same text that was beside the floated picture. -->
+                    <div class="col-lg col-12">
+                        <img src="./Assets/images/Profile Picture-landscape.JPG" alt="..." class="img-thumbnail myPicture float-left m-3 d-none d-sm-block">
+                        <img src="./Assets/images/Profile Picture-landscape.JPG" alt="..." class="img-thumbnail myPicture d-block d-sm-none mx-auto">
+                        <p class=" myText d-none d-sm-block"> My name is Riley Brown. I studied psychology at the University of Vermont with a focus on developmental psychology. It's a fascinating field, in my opinion, and something very deserving of more study. When I was still in school I thought that I might end up working as a psychologist, and as I focused more and more on family dynamics and early development I decided I'd look into how to become a school psychologist or counselor. Unfortunately going into care like that requires quite a bit of schooling. I believe it was 4 more years at grad school to become a counselor or 6 to become a psychologist. I was intimidated by the cost of continuing school and decided perhaps to set my feet and establish myself a little first. That's how I ended up as a preschool and kindergarten prepratory teacher. After my two years working with these children I realized that while I love working with kids that young, it wasn't what I wanted to do the rest of my life. That's what led me here.</p>
+                    </div>
+                    <div class="col-12 myText d-block d-sm-none">
+                        <p>
+                            My name is Riley Brown. I studied psychology at the University of Vermont with a focus on developmental psychology. It's a fascinating field, in my opinion, and something very deserving of more study. When I was still in school I thought that I might end up working as a psychologist, and as I focused more and more on family dynamics and early development I decided I'd look into how to become a school psychologist or counselor. Unfortunately going into care like that requires quite a bit of schooling. I believe it was 4 more years at grad school to become a counselor or 6 to become a psychologist. I was intimidated by the cost of continuing school and decided perhaps to set my feet and establish myself a little first. That's how I ended up as a preschool and kindergarten prepratory teacher. After my two years working with these children I realized that while I love working with kids that young, it wasn't what I wanted to do the rest of my life. That's what led me here.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col myText">
+                        <p>
+                            I did have a life before university as well. I grew up right outside Philly and went to William Penn Charter School in east falls. I was lucky enough that my father worked there so my family could afford to send me there. At Penncharter I had the oportunity to take part in many extracurricular activities. At least one sport and one other activity was required. I never understood why they didn't just say 2 sports, there wasn't really much outside the school play as a non-sport extrcurricular activity. I was a terrible three sport athlete: Water polo, Swimming, and Rowing (once we started the team). Each of these sports was a lot of fun, and mostly the team atmosphere and culture is what made them so enjoyable. Particularly swimming and rowing are both sports where you push yourself horrendously every day, but with friends and good coaches its not quite so bad.
+                        </p>
+                        <p>
+                            Having only spoken about schooling it might surprise you but I also had a life outside of school. Although it turns out I didn't have too much of a life away from pools or water. My father was a swim coach durign the summers at various country clubs so most of my summers while I was young consisted of me playing at the pool while he worked, because both my parents worked and my older siblings couldn't watch me yet or had their own camps or activities. Once I was older I actually ended up working during the summer at those same country clubs as a lifeguard. So a lot of my time was spent at pools.
+                        </p>
+                        <p>
+                            It wasn't always pools, however, sometimes we would visit my grandmother. Who lived by the ocean. Where we spent most of our visits. More water. It was a good time, I'd highly recommend spend most of your life in or near water.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 myText d-block d-sm-none">
-                <p>
-                    My name is Riley Brown. I studied psychology at the University of Vermont with a focus on developmental psychology. It's a fascinating field, in my opinion, and something very deserving of more study. When I was still in school I thought that I might end up working as a psychologist, and as I focused more and more on family dynamics and early development I decided I'd look into how to become a school psychologist or counselor. Unfortunately going into care like that requires quite a bit of schooling. I believe it was 4 more years at grad school to become a counselor or 6 to become a psychologist. I was intimidated by the cost of continuing school and decided perhaps to set my feet and establish myself a little first. That's how I ended up as a preschool and kindergarten prepratory teacher. After my two years working with these children I realized that while I love working with kids that young, it wasn't what I wanted to do the rest of my life. That's what led me here.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col myText">
-                <p>
-                    I did have a life before university as well. I grew up right outside Philly and went to William Penn Charter School in east falls. I was lucky enough that my father worked there so my family could afford to send me there. At Penncharter I had the oportunity to take part in many extracurricular activities. At least one sport and one other activity was required. I never understood why they didn't just say 2 sports, there wasn't really much outside the school play as a non-sport extrcurricular activity. I was a terrible three sport athlete: Water polo, Swimming, and Rowing (once we started the team). Each of these sports was a lot of fun, and mostly the team atmosphere and culture is what made them so enjoyable. Particularly swimming and rowing are both sports where you push yourself horrendously every day, but with friends and good coaches its not quite so bad.
-                </p>
-                <p>
-                    Having only spoken about schooling it might surprise you but I also had a life outside of school. Although it turns out I didn't have too much of a life away from pools or water. My father was a swim coach durign the summers at various country clubs so most of my summers while I was young consisted of me playing at the pool while he worked, because both my parents worked and my older siblings couldn't watch me yet or had their own camps or activities. Once I was older I actually ended up working during the summer at those same country clubs as a lifeguard. So a lot of my time was spent at pools.
-                </p>
-                <p>
-                    It wasn't always pools, however, sometimes we would visit my grandmother. Who lived by the ocean. Where we spent most of our visits. More water. It was a good time, I'd highly recommend spend most of your life in or near water.
-                </p>
+            <div class="col-4">
+
             </div>
         </div>
     </div>
-    <br>
-<div class="container-fluid text-center my-3"> 
-    <div class="row border-top stickyFooter">
-        <p class="text-muted col">Footer</p>
+
+        <br>
+    <div class="container-fluid text-center"> 
+        <div class="row border-top stickyFooter">
+            <p class="text-muted col">Footer</p>
+        </div>
     </div>
-</div>
   
     <!-- footer with blue boarder line -->
     <!-- make it sticky so it stays at the bottom of the screen (if I have time for that) -->

@@ -11,58 +11,70 @@
 <body>
     <!-- Navbar First -->
     <!-- Name in colored box then the About Contact Gallery buttons -->
-    <div class="container">
-        <nav class="nav border-bottom align-items-center">
-            <!-- Custom styling uses .myName and .topBarButtons -->
-            <h1 class="col-lg-4 col-sm-5 col-12 text-center myName">Riley Brown</h1>
-            <div class="col-lg-4 col-sm-5 offset-sm-2 offset-lg-4">
-                <div class="row">
-                    <a class="nav-link active col-4 topBarButtons" href="./index.html">About</a>
-                    <a class="nav-link col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
-                    <a class="nav-link col-4 topBarButtons" href="./contact.html">Contact</a>
+    <div class="container-fluid topBarBackground border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Custom styling uses .myName and .topBarButtons .topBarBackground-->
+                <h1 class="col-lg-4 col-sm-5 col-12 text-center myName">Riley Brown</h1>
+                <div class="col-lg-4 col-sm-5 offset-sm-2 offset-lg-4">
+                    <div class="row">
+                        <a class="nav-link active col-4 topBarButtons" href="./index.html">About</a>
+                        <a class="nav-link col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
+                        <a class="nav-link col-4 topBarButtons" href="./contact.html">Contact</a>
+                    </div>
                 </div>
+                <!-- This would also work, but it feels better to me to have it as this sub-row sort of thing
+                <a class="nav-link active col-lg-2 col-sm-4 col-4 offset-lg-2 topBarButtons" href="./index.html">About</a>
+                <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
+                <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./contact.html">Contact</a> -->
             </div>
-            <!-- This would also work, but it feels better to me to have it as this sub-row sort of thing
-            <a class="nav-link active col-lg-2 col-sm-4 col-4 offset-lg-2 topBarButtons" href="./index.html">About</a>
-            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
-            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./contact.html">Contact</a> -->
-        </nav>
+        </div>
     </div>
     <br>
     <!-- Big text box -->
     <!-- Header with break line underneath -->
     <!-- 5 pictures lined up at 2 per row -->
     <!-- colored box floats over the pictures with project titles -->
-    <div class="container border mb-3">
+        <!-- Try making the pictures into the backgrounds of cards that have the text on top of them -->
+        
+    <div class="container mb-3 ">
         <div class="row">
-            <h1 class="col-12 myHeader border-bottom">
-                Portfolio
-            </h1>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <img src="./Assets/images/Old Wheel.jpg" alt="..." class="img-thumbnail">
-                <h3>Hangman</h2>
+            <!-- Adding the styling here instead of the container level lets me hide the second column here and display on only one side while on large screens and then center while on smaller screens -->
+            <div class="col-lg-8 col-12 border boxBackground">
+                <div class="row">
+                    <h1 class="col-12 myHeader border-bottom">
+                        Portfolio
+                    </h1>
+                </div>    
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="./Assets/images/Old Wheel.jpg" alt="..." class="img-fluid projectImage">
+                        <h3 class="projectTitle">Hangman</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="./Assets/images/Cool Sparks.jpg" alt="..." class="img-fluid projectImage">
+                        <h3 class="projectTitle">Role Playing Game</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="./Assets/images/Old journal.jpg" alt="..." class="img-fluid projectImage">
+                        <h3 class="projectTitle">Trivia</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="./Assets/images/Nasa.jpg" alt="..." class="img-fluid projectImage">
+                        <h3 class="projectTitle">Info Widget</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="./Assets/images/Trains at sunset.jpg" alt="..." class="img-fluid projectImage">
+                        <h3 class="projectTitle">Rock Paper Scisors</h2>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <img src="./Assets/images/Cool Sparks.jpg" alt="..." class="img-thumbnail">
-                <h3>Role Playing Game</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <img src="./Assets/images/Old journal.jpg" alt="..." class="img-thumbnail">
-                <h3>Trivia</h2>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <img src="./Assets/images/Nasa.jpg" alt="..." class="img-thumbnail">
-                <h3>Info Widget</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <img src="./Assets/images/Trains at sunset.jpg" alt="..." class="img-thumbnail">
-                <h3>Rock Paper Scisors</h2>
+            <div class="col-4">
+
             </div>
         </div>
     </div>
