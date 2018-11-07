@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
     <title>Riley Brown's Profile - Crafted with Bootstrap</title>
     <link rel="stylesheet" type="text/css" href="./Assets/css/reset.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -13,10 +14,11 @@
     <div class="container">
         <nav class="nav border-bottom align-items-center">
             <!-- Custom styling uses .myName and .topBarButtons -->
-            <h1 class="col-3 myName">Riley Brown</h1>
-            <a class="nav-link active col-1 offset-6 topBarButtons" href="#">About</a>
-            <a class="nav-link col-1 topBarButtons" href="#">Portfolio</a>
-            <a class="nav-link col-1 topBarButtons" href="#">Contact</a>
+            <h1 class="col-lg-4 col-sm-12 col-12 myName">Riley Brown</h1>
+            
+            <a class="nav-link active col-lg-2 col-sm-4 col-4 offset-lg-2 topBarButtons" href="./index.html">About</a>
+            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./portfolio.html">Portfolio</a>
+            <a class="nav-link col-lg-2 col-sm-4 col-4 topBarButtons" href="./contact.html">Contact</a>
         </nav>
     </div>
     <br>
@@ -30,14 +32,39 @@
                 Portfolio
             </h1>
         </div>
-            
+        <div class="row">
+            <div class="col-6 col-sm">
+                <img src="./Assets/images/Blank picture.svg" alt="..." class="img-thumbnail">
+                <h2>First Assignment</h2>
+            </div>
+            <div class="col-6 col-sm">
+                <img src="./Assets/images/Blank picture.svg" alt="..." class="img-thumbnail">
+                <h2>Second Assignment</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm">
+                <img src="./Assets/images/Blank picture.svg" alt="..." class="img-thumbnail">
+                <h2>Third Assignment</h2>
+            </div>
+            <div class="col-6 col-sm">
+                <img src="./Assets/images/Blank picture.svg" alt="..." class="img-thumbnail">
+                <h2>Fourth Assignment</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm">
+                <img src="./Assets/images/Blank picture.svg" alt="..." class="img-thumbnail">
+                <h2>Final Assignment</h2>
+            </div>
+        </div>
     </div>
     <br>
-<div class="container-fluid">
-    <div class="sticky-bottom col border-top">
-        <p class="text-center">Footer</p>
+    <div class="container-fluid text-center"> 
+        <div class="row border-top stickyFooter">
+            <p class="text-muted col">Footer</p>
+        </div>
     </div>
-</div>
     <!-- footer with blue boarder line -->
     <!-- make it sticky so it stays at the bottom of the screen (if I have time for that) -->
     
