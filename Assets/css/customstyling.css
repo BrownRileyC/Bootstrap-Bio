@@ -12,6 +12,7 @@ body {
     background-color: #4aaaa5;
     color: #ffffff;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin-bottom: 0;
 }
 .topBarButtons {
     color: #777777;
@@ -44,16 +45,11 @@ body {
 /* Index page styling/classes */
 
 .myPicture {
-    transform: rotate(180deg);
-    width: 300px;
+    width: 200px;
     height: auto;
 }
 
 /* Portfolio styling/classes */
-.projectImage {
-/* These seem fin without any changes/styling */
-
-}
 
 .projectTitle {
     background-color: #4aaaa5;
